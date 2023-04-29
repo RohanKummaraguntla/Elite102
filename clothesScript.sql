@@ -1,0 +1,1 @@
+INSERT INTO clothes (type, size, price …) VALUES (clothes'shirt', 'small', 10)clothes
