@@ -1,5 +1,4 @@
 import mysql.connector
-<<<<<<< HEAD
 import time
 connection = mysql.connector.connect(host = "localhost", user = "root", database = "sys", password = "Boopybozo8")
 
@@ -224,27 +223,3 @@ while True:
     user_selection()
     cursor.execute(testQuery)
     connection.commit()
-=======
-connection = mysql.connector.connect(user = "root", database = "sys", password = "Boopybozo8")
-
-testQuery = ('SELECT * FROM BankDatabase')
-
-cursor = connection.cursor()
-
-print('Welcome to the bank!')
-signOrCreate = input('Do you have an account? ')
-
-if (signOrCreate == 'yes') or (signOrCreate == 'Yes') or (signOrCreate == 'y'):
-    usernameExisting = input('Sign in: ')
-if (signOrCreate == 'no') or (signOrCreate == 'No') or (signOrCreate == 'n'):
-    print('Create an account:')
-
-cursor.execute(testQuery)
-
-for item in cursor:
-    print(item)
-
-cursor.close()
-
-connection.close()
->>>>>>> 1db6f73fc967e148640483b263c6bebb8f9c0a6c
